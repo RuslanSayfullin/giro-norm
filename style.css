@@ -2,3 +2,11 @@
     font-family: "GardensC";
     src: url("fonts/GardensC.otf");
 }
+
+*{
+    font-family: "GardensC";
+    margin: 0;
+    padding: 0;
+    letter-spacing:1px;
+    box_sizing: border-box;
+}
