@@ -173,3 +173,61 @@ section#about-us{
     background-size: 100% 100%;
 }
 
+section#partners .item{
+    font-size: 50px;
+    cursor: default;
+    z-index: -1:
+    top: 0;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-100%);
+    transition-duration: .4s;
+    opacity: 1;
+}
+
+section#fpartners .item p{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #c5c5c5;
+}
+section#tpartners .item:hover{
+    color: #3d67b0;
+}
+section#partners input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+section#fpartners input[type="radio"]:checked + .partners-label
+{
+    border: solid lpx #3d67be;
+    background-color: #3d67b0;
+}
+section#partners input[type="radio"]:checked + .item {
+    transform: translateX(100%);
+}
+section#partners input[type="radio"]:checked + .partners-label + .item {
+    transform: translateX(e);
+    opacity: 1;
+}
+section#partners .partners-label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #e0e0e0;
+    cursor: pointer;
+    margin: 6px !important;
+    transition: .5s ease-in-out;
+}
+section#partners #brand-container{
+    overflow: hidden;
+    position: relative;
+}
